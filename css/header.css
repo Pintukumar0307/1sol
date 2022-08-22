@@ -4,13 +4,12 @@
 }
 .navbar{
   display: flex;
-  
+  align-items: center;
+  justify-content: center;
   height: 12vh;
   top: 0;
-  /* background-color: #333; */
-  background-color: #17bc9c;
   
-  /* color: white; */
+  background-color: #17bc9c;
   font-size: 24px;
   font-weight: 600;
 
@@ -23,15 +22,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
-  width: 100%;
-  
-  
  
 }
 .navlist a{
   
-    /* color: white; */
+  
     color: black;
     background-color: transparent;
     text-decoration: none;
@@ -43,114 +38,49 @@ list-style: none;
 padding-right: 40px;
 padding-left: 40px;
 }
+.burger{
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  right: 5%;
+  top: 15px;
+
+}
+.line{
+  width: 33px;
+  background-color: white;
+  height: 4px;
+  margin: 3px 3px;
+}
+
+
 
 @media only screen and (max-width: 800px) {
   .navbar{
       flex-direction: column;
-      /* height: 12vh; */
+      height: 70vh;
 
      
   }
    .navlist{
        flex-direction: column;
        margin: auto;
-       display: none;
+      
+      
    }
    .navlist li{
        padding-top: 10px;
        padding-bottom: 10px;
    }
-   .h-nav{
-       height: 60vh;
-   }
-}
+   
 
-/* *{
-    margin: 0;
-    padding: 0;
-}
-body {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .navbar {
-    overflow: hidden;
-    background-color: #333;
-    height: 8vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .navbar a {
-    float: left;
-    font-size: 18px;
-    font-weight: 600;
-    color: white;
-    text-align: center;
-    padding: 14px 50px;
-    text-decoration: none;
-  }
-  
-  .service {
-    float: left;
-    overflow: hidden;
-  }
-
-  
-  .service .btn {
-    font-size: 18px;  
-    font-weight: 600;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 50px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-  }
-  
-  
-  .service-content {
-    display: none;
-    position: absolute;
-    background-color: #bab0b0;
-    min-width: 20vw;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .service-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
+   .burger{
     display: block;
-    text-align: left;
+}
+ .h-nav{
+    height: 12vh;
+}
+ .v-class{
+    opacity: 0;
   }
-  
-  .service-content a:hover {
-    background-color: #ddd;
-  }
-  
-  .service:hover .service-content {
-    display: block;
-  }
-
-@media only screen and (max-width: 900px) {
-    .navbar{
-        flex-direction: column;
-
-    }
-     .navbar a,.service .btn,.home {
-         flex-direction: column;
-         margin: auto;
-     }
-     .navlist li{
-         padding-top: 10px;
-         padding-bottom: 10px;
-     }
-     .h-nav{
-         height: 60vh;
-     }
-  } */
+}
