@@ -1,10 +1,26 @@
-.home{
-    height: 100vh;
+.home-name{
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('/image/bg1.jpg');
-    background-repeat: repeat-y;
+    background-image: url('/image/bg1_01.jpg');
+    background-repeat:no-repeat;
   background-attachment: fixed;
     background-size: 100%;
+}
+
+.home-content{
+  height: 100vh;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.home-con1{
+  width: 60vw;
+  background-color: rgb(232, 223, 223);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

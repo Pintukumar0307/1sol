@@ -11,7 +11,7 @@
   
   background-color: #17bc9c;
   font-size: 24px;
-  font-weight: 600;
+  /* font-weight: 600; */
 
   position: fixed;
   width: 100vw;
@@ -32,18 +32,24 @@
     text-decoration: none;
   
 }
+.navlist a :hover{
+   color: white;
+   background-color: black;
+   border-radius: 10px;
+}
 
 .navlist li{
 list-style: none;
 padding-right: 40px;
 padding-left: 40px;
 }
+
 .burger{
   display: none;
   position: absolute;
   cursor: pointer;
   right: 5%;
-  top: 15px;
+  top: 10px;
 
 }
 .line{
@@ -58,7 +64,7 @@ padding-left: 40px;
 @media only screen and (max-width: 800px) {
   .navbar{
       flex-direction: column;
-      height: 70vh;
+      height: 40vh;
 
      
   }
@@ -78,7 +84,7 @@ padding-left: 40px;
     display: block;
 }
  .h-nav{
-    height: 12vh;
+    height: 8vh;
 }
  .v-class{
     opacity: 0;
